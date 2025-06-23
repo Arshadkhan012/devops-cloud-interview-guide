@@ -39,6 +39,6 @@ sudo find /var/log -type f -mtime +7 -delete
 ---
 
 > Summary:  
-> Use `find /var/log -type f -mtime +7` to list log files older than 7 days — a must-know for log maintenance in production servers.
-
+> Use `find /var/log -type f -mtime +7` `-name *.log`  to list log files older than 7 days — a must-know for log maintenance in production servers.
+-  `-name *.log` : name type .logs file only
 ---
