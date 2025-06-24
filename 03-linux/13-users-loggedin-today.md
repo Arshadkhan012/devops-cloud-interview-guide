@@ -9,7 +9,7 @@ This tests your understanding of Linux log inspection and user activity tracking
 ### 🖥️ Command
 
 ```bash
-last | grep "$(date '+%a %b %e')" | awk '{print $1}' | sort | uniq
+last -F | grep "$(date '+%a %b %e')" | awk '{print $1}' | sort | uniq
 ```
 
 ---
